@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditRentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EditTextPhone"
+                    android:layout_width="327dp"
+                    android:layout_height="wrap_content"
+                    android:hint="+7(  ......    Введите номер телефона"
+                    android:lines="1" />
+
+                <Button
+                    android:id="@+id/buttonSelectGuest"
+                    android:layout_width="47dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addGuestButtonClick"
+                    android:text="+" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/EditTextFio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Фамилия Имя Отчество"
+                android:inputType="textPersonName"
+                android:lines="1" />
+
+            <Spinner
+                android:id="@+id/SpinnerNameFlat"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Место размещения"
+                android:inputType="textPhonetic" />
+
+            <EditText
+                android:id="@+id/EditTextDtIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="false"
+                android:focusable="false"
+                android:hint="Время заезда"
+                android:inputType="textPhonetic" />
+
+            <EditText
+                android:id="@+id/EditTextDtOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="Время выезда"
+                android:inputType="textPhonetic" />
+
+            <EditText
+                android:id="@+id/EditTextCostFlat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Стоимость проживания за сутки"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/EditTextDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Длительность проживания"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/EditTextCostSum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Итоговая стоимость проживания"
+                android:inputType="number" />
+
+            <Spinner
+                android:id="@+id/SpinnerRaiting"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:entries="@array/raitingRent"
+                android:hint="Рейтинг проживания" />
+
+            <CheckBox
+                android:id="@+id/checkBoxReserv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Бронь" />
+
+            <EditText
+                android:id="@+id/EditTextNoteRent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Примечание" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/SaveButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Сохранить" />
+
+                <Button
+                    android:id="@+id/DeleteButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Удалить" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabDeleteRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="90dp"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSaveRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

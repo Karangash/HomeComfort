@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/EditTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите номер телефона"
+        android:inputType="textPhonetic" />
+
+    <EditText
+        android:id="@+id/EditTextFio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите Фамилию Имя Отчество"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/EditTextCostFlat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите рейтинг гостя"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/EditTextNoteRent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Примечание" />
+
+    <EditText
+        android:id="@+id/EditTextDtEditGuest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Дата и время редактирования" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Сохранить"
+            android:onClick="save"/>
+        <Button
+            android:id="@+id/DeleteButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Удалить"
+            android:onClick="delete"/>
+    </LinearLayout>
+</LinearLayout>

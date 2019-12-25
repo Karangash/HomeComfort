@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <DatePicker
+                android:id="@+id/datePicker1"
+                android:layout_width="325dp"
+                android:layout_height="394dp"
+                android:datePickerMode="calendar"></DatePicker>
+
+            <TimePicker
+                android:id="@+id/timePicker1"
+                style="@android:style/Widget.Material.Light.TimePicker"
+                android:layout_width="323dp"
+                android:layout_height="319dp"
+                android:forceHasOverlappingRendering="false"
+                android:layoutMode="clipBounds"
+                android:nestedScrollingEnabled="true"
+                android:scrollbarAlwaysDrawHorizontalTrack="false"
+                android:scrollbarAlwaysDrawVerticalTrack="false"
+                android:timePickerMode="clock"></TimePicker>
+
+            <Button
+                android:id="@+id/buttonSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Выбрать" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/EditTextFio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите название места размещения" />
+
+    <EditText
+        android:id="@+id/EditTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите адрес" />
+
+    <EditText
+        android:id="@+id/EditTextCostFlat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Стоимость проживания" />
+
+    <EditText
+        android:id="@+id/EditTextNoteFlat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите примечания" />
+
+    <EditText
+        android:id="@+id/EditTextNoteRent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Дата и время последнего редактирования"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Сохранить"
+            android:onClick="save"/>
+        <Button
+            android:id="@+id/DeleteButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Удалить"
+            android:onClick="delete"/>
+    </LinearLayout>
+</LinearLayout>
